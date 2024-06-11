@@ -8,7 +8,7 @@ namespace SPA.Data
             : base(options)
         {
         }
-        public DbSet<User> Users { get; set; }
+        public DbSet <User> Users { get; set; }
         public DbSet <Login> Login { get; set; }
         public DbSet <Role> Roles { get; set; }
         public DbSet <Modules> Module {  get; set; }
@@ -27,5 +27,6 @@ namespace SPA.Data
         public DbSet <Field> Fields { get; set; }
         public DbSet <Flags> Flag { get; set; }
         public DbSet <FieldConfiguration> FieldsConfig { get; set; }
+        public DbSet <MarkingRule> MarkingRules { get; set; }
     }
 }
