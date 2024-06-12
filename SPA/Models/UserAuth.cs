@@ -1,15 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SPA
+namespace SPA.Models
 {
-    public class Login
+    public class UserAuth
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int LoginId { get; set; }
+        public int UserAuthId { get; set; }
         public int UserId { get; set; }
-        public bool autogenpass { get; set; }
+        public bool AutogenPass { get; set; }
         public string Password { get; set; }
     }
 }
