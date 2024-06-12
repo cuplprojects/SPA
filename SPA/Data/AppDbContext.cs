@@ -1,4 +1,5 @@
 ﻿using SPA.Models;
+using SPA.Models.NonDBModels;
 
 namespace SPA.Data
 {
