@@ -9,8 +9,8 @@ namespace SPA
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ResponseId { get; set; }
-        public JsonDocument Section { get; set; }
-        public JsonDocument Response { get; set; }
+        public string Section { get; set; }
+        public string Response { get; set; }
         public int ProjectId { get; set; }
     }
 }

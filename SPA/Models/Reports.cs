@@ -8,7 +8,7 @@ namespace SPA
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ReportId { get; set; }
-        public JsonDocument ReportData { get; set; }
+        public string ReportData { get; set; }
         public int ProjectId { get; set; }
 
     }

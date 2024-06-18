@@ -9,7 +9,7 @@ namespace SPA
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public JsonDocument FieldAnnotation { get; set; }
+        public string FieldAnnotation { get; set; }
         public int ProjectId { get; set; }
         public string ImageUrl { get; set; }
     }

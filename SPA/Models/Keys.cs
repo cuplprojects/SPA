@@ -9,7 +9,7 @@ namespace SPA
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int KeyId { get; set; }
-        public JsonDocument KeyData { get; set; }
+        public string KeyData { get; set; }
         public int ProjectId { get; set; }
         public string KeyFile { get; set; }
     }

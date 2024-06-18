@@ -5,9 +5,11 @@ namespace SPA.Models
 {
     public class AmbiguousQues
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int AmbiguousId { get; set; }
         public int ProjectId { get; set; }
         public int MarkingId { get; set; }
-        public JsonDocument SetQuesAns { get; set; }
+        public string SetQuesAns { get; set; }
     }
 }

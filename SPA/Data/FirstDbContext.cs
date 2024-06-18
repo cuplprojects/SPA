@@ -3,9 +3,9 @@ using SPA.Models.NonDBModels;
 
 namespace SPA.Data
 {
-    public class AppDbContext : DbContext
+    public class FirstDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options)
+        public FirstDbContext(DbContextOptions<FirstDbContext> options)
             : base(options)
         {
         }
@@ -29,5 +29,6 @@ namespace SPA.Data
         public DbSet <Flags> Flag { get; set; }
         public DbSet <FieldConfiguration> FieldsConfig { get; set; }
         public DbSet <MarkingRule> MarkingRules { get; set; }
+        public DbSet <ChangeLog> ChangeLogs { get; set; }
     }
 }

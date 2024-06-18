@@ -9,7 +9,7 @@ namespace SPA.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         
         public int ScoreId { get; set; }
-        public JsonDocument ScoreData { get; set; }
+        public string ScoreData { get; set; }
         public int CorrectedId { get; set; }
         public int ProjectId { get; set; }
     }

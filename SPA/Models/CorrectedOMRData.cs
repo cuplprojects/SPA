@@ -7,9 +7,8 @@ namespace SPA
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
         public int CorrectedId { get; set; }
-        public JsonDocument CorrectedOmrData { get; set; }
+        public string CorrectedOmrData { get; set; }
         public int ProjectId { get; set; }
         public string OmrData { get; set; }
     }

@@ -10,7 +10,7 @@ namespace SPA
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int FlagId { get; set; }
         public string Remarks { get; set; }
-        public JsonDocument FieldNameValue { get; set; }
+        public string FieldNameValue { get; set; }
         public int ProjectId { get; set; }
     }
 }
